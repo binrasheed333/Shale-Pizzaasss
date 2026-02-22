@@ -1,0 +1,81 @@
+body{
+    background: linear-gradient(90deg, #ff3131, #ff914d);
+}
+
+/* ============ NAVBAR STYLES (START) ============ */
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar {
+  background: linear-gradient(50deg, #ff3131, #ff914d);
+  padding: 12px 20px !important;
+}
+
+.dropdown-menu {
+    background: #ff914d
+}
+
+.dropdown-item {
+    color: #FFC74D;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+
+.dropdown-item:hover {
+    background-color: transparent !important;
+    transform: scale(1.05);
+    color: #ff3131;
+}
+
+/* FIXED BUTTON SIZE FOR ALL PAGES */
+.custom-btn {
+  border: 2px solid #FFC74D !important;
+  background-color: transparent;
+  padding: 8px 20px !important; /* FIXED */
+  border-radius: 10px;
+  color: #FFC74D;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  font-size: 16px !important; /* FIXED */
+  transition: 0.3s ease-in;
+  text-decoration: none !important;
+  display: inline-block;
+  position: relative;
+  min-width: 120px !important; /* ADDED */
+  height: 40px !important; /* ADDED */
+  text-align: center !important;
+  line-height: 24px !important;
+}
+
+.custom-btn:hover {
+  border: 2px solid #FFC74D !important;
+  color: #ff3131;
+  background-color: #FFC74D;
+  text-decoration: none !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 199, 77, 0.3);
+}
+
+/* FIX FOR NAVBAR ITEMS GAP */
+.navbar-nav {
+    gap: 15px !important;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        gap: 10px !important;
+        padding: 15px 0 !important;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px 15px !important;
+    }
+    
+    .custom-btn {
+        width: 100% !important;
+        margin-top: 10px !important;
+    }
+}
+/* ============ NAVBAR STYLES (END) ============ */
+

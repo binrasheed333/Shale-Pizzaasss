@@ -1,0 +1,620 @@
+/*--nav Bar--*/
+/* ============ NAVBAR STYLES (START) ============ */
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar {
+  background: linear-gradient(50deg, #ff3131, #ff914d);
+  padding: 12px 20px !important;
+}
+
+.dropdown-menu {
+    background: #ff914d
+}
+
+.dropdown-item {
+    color: #FFC74D;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+
+.dropdown-item:hover {
+    background-color: transparent !important;
+    transform: scale(1.05);
+    color: #ff3131;
+}
+
+/* FIXED BUTTON SIZE FOR ALL PAGES */
+.custom-btn {
+  border: 2px solid #FFC74D !important;
+  background-color: transparent;
+  padding: 8px 20px !important; /* FIXED */
+  border-radius: 10px;
+  color: #FFC74D;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  font-size: 16px !important; /* FIXED */
+  transition: 0.3s ease-in;
+  text-decoration: none !important;
+  display: inline-block;
+  position: relative;
+  min-width: 120px !important; /* ADDED */
+  height: 40px !important; /* ADDED */
+  text-align: center !important;
+  line-height: 24px !important;
+}
+
+.custom-btn:hover {
+  border: 2px solid #FFC74D !important;
+  color: #ff3131;
+  background-color: #FFC74D;
+  text-decoration: none !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 199, 77, 0.3);
+}
+
+/* FIX FOR NAVBAR ITEMS GAP */
+.navbar-nav {
+    gap: 15px !important;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        gap: 10px !important;
+        padding: 15px 0 !important;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px 15px !important;
+    }
+    
+    .custom-btn {
+        width: 100% !important;
+        margin-top: 10px !important;
+    }
+}
+/* ============ NAVBAR STYLES (END) ============ */
+body{
+    background:linear-gradient(90deg, #ff3131, #ff914d );;
+}
+.contact-header{
+    background: linear-gradient(50deg, #ff3131, #ff914d);
+    color: #FFC74D;
+    padding:60px 0;
+    text-align:center;
+}
+.contact-box{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/*.contact-box:hover{
+    color: white;
+}*/
+.contact-box i{
+    color:#dc3545;
+    font-size:22px;
+    margin-right:10px;
+}
+.btn-custom{
+    background:#dc3545;
+    color:#fff;
+}
+.btn-custom:hover{
+    background:#b52b37;
+}
+
+/*--Footer--*/
+/* Footer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Main */
+.footer-main {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0 20px;
+    margin-top: auto;
+}
+
+/* Address Box with Logo Rotation */
+.address-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.add-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #ff914d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-icon:hover {
+    transform: rotate(360deg);
+}
+
+/* Logo image inside add-icon */
+.add-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.add-icon:hover img {
+    transform: rotate(-360deg); /* Counter-rotate image to stay upright */
+}
+
+.add-icon i {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.add-icon:hover i {
+    transform: rotate(-360deg); /* Counter-rotate icon to stay upright */
+}
+
+.add-content h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff914d;
+    font-weight: bold;
+}
+
+.add-content p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* Quick Links */
+.footer-links h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ff914d;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 3px 0;
+}
+
+.footer-links ul li a:hover {
+    color: #ff914d;
+    padding-left: 5px;
+}
+
+/* Contact Info */
+.contact-info h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ff914d;
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    color: #ff914d;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.contact-info a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff914d;
+    text-decoration: underline;
+}
+
+.opening-hours {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+}
+
+.opening-hours h6 {
+    font-size: 16px;
+    color: #ff914d;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.opening-hours p {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 3px;
+}
+
+/* Social Buttons with 360° Rotation */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 18px;
+}
+
+.social-btn:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: white;
+    text-decoration: none;
+}
+
+/* Social Media Colors */
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+.instagram { background: #e1306c; }
+.youtube { background: #ff0000; }
+.whatsapp { background: #0a66c2; }
+
+/* Copyright */
+.copyright {
+    background-color: rgba(0,0,0,0.2);
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.copyright a {
+    color: #ff914d;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* News Strip */
+.News-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+    margin: 0;
+    padding: 0;
+}
+
+.news-label {
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.news-label:hover {
+    transform: rotate(360deg);
+}
+
+.news-label i {
+    margin-right: 8px;
+}
+
+.news-content {
+    flex: 1;
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.news-content marquee {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.news-link {
+    color: yellow !important;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.news-link:hover {
+    color: #ff914d !important;
+    text-decoration: underline;
+}
+
+.news-content span {
+    color: yellow;
+    margin-right: 30px;
+    white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .footer-main {
+        padding: 40px 0 15px;
+    }
+    
+    .add-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 12px;
+    }
+    
+    .add-icon i {
+        font-size: 20px;
+    }
+    
+    .add-icon img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .address-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .add-content {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .social-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-main .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .footer-main .row > div {
+        margin-bottom: 30px;
+    }
+    
+    .footer-main .row > div:last-child {
+        margin-bottom: 0;
+    }
+    
+    .footer-links ul li a:hover {
+        padding-left: 0;
+    }
+    
+    .News-footer {
+        flex-direction: column;
+    }
+    
+    .news-label {
+        width: 100%;
+        justify-content: center;
+        padding: 8px 15px;
+        text-align: center;
+    }
+    
+    .news-content {
+        width: 100%;
+        padding: 8px 10px;
+    }
+    
+    .news-link, .news-content span {
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    
+    body {
+        padding-bottom: 70px;
+    }
+    
+    .copyright {
+        font-size: 13px;
+        padding: 15px 10px !important;
+    }
+    
+    .copyright a {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-main {
+        padding: 30px 0 10px;
+    }
+    
+    .add-content h5,
+    .footer-links h5,
+    .contact-info h5 {
+        font-size: 16px;
+    }
+    
+    .add-content p,
+    .footer-links ul li a,
+    .contact-info p {
+        font-size: 13px;
+    }
+    
+    .add-icon {
+        width: 45px;
+        height: 45px;
+        margin: 0 auto 10px;
+    }
+    
+    .add-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .news-label {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    .news-content {
+        padding: 6px 8px;
+    }
+    
+    .news-link, .news-content span {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    .social-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        margin: 0 2px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+        padding: 12px 8px !important;
+    }
+    
+    body {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .news-link, .news-content span {
+        font-size: 11px;
+        margin-right: 8px;
+    }
+    
+    .social-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+        margin: 0 1px;
+    }
+    
+    .copyright {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+    
+    .news-label {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+    
+    .add-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .add-icon i {
+        font-size: 18px;
+    }
+    
+    .add-icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Fix for Bootstrap column spacing on mobile */
+@media (max-width: 768px) {
+    .col-md-6, .col-md-12 {
+        margin-bottom: 30px;
+    }
+    
+    .col-md-6:last-child, .col-md-12:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Ensure no white line above news strip */
+.News-footer {
+    border: none;
+    outline: none;
+}
+
+.news-content marquee {
+    line-height: 1;
+}
+
+/* Fix for mobile viewport */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+

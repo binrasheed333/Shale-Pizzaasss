@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shale Pizza - Order Now</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="orderform.css">
+
+</head>
+<body>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="img-pic/3rd.logo.pic.png" class="img-fluid" alt="logo" style="width: 100px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+         <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="menu.html">Main Menu</a></li> <hr>
+                            <li><a class="dropdown-item" href="menu.html#pizza">Pizza</a></li>
+                            <li><a class="dropdown-item" href="menu.html#pizza-sandwiches">Pizza Sandwiches</a></li>
+                            <li><a class="dropdown-item" href="menu.html#garlic-bread">Garlic Bread</a></li>
+                            <li><a class="dropdown-item" href="menu.html#pasta">Pasta</a></li>
+                            <li><a class="dropdown-item" href="menu.html#desserts">Desserts</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="menu.html#beverages">Beverages</a></li>
+                        </ul>
+                    </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="img-pic/shale-pizza-menu.pdf">Menu Download</a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Locations
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="locations.html#main-branch">Restaurant Location</a></li>
+            <li><a class="dropdown-item" href="locations.html#all-branches">Locations</a></li>
+            <li><a class="dropdown-item" href="about.html#faq">FAQ</a></li>
+          </ul>
+        </li>
+ <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Exclusive offers
+          </a>
+          <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="./menu.html#bestdeal">Best Deal</a></li>
+            <li><a class="dropdown-item" href="./img-pic/Weekend special.png" target="_blank">Weekend Special</a></li>
+            <li><a class="dropdown-item" href="./img-pic/Combo deal-1.png" target="_blank">Combo Offer Deal.1</a></li>
+            <li><a class="dropdown-item" href="./img-pic/Combo deal-2.png" target="_blank">Combo Offer Deal.2</a></li>
+
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+  <a href="orderform.html" class="custom-btn">Order Now</a>
+
+
+</li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="header">
+    <h1><i class="fas fa-pizza-slice"></i> Shale Pizza</h1>
+    <p>Fresh • Hot • Delicious • Every bite tells a story </p>
+</div>
+
+<div class="container my-4">
+    
+    <!-- Alerts -->
+    <div class="alert alert-success" id="successAlert">
+        <i class="fas fa-check-circle"></i> Order processed successfully! Check WhatsApp and Email.
+    </div>
+    
+    <div class="alert alert-info" id="infoAlert">
+        <i class="fas fa-info-circle"></i> <span id="infoMessage"></span>
+    </div>
+
+<div class="row">
+
+<!-- Form -->
+<div class="col-lg-7 mb-4">
+    <form id="orderForm" id="orderform">
+        <div class="mb-3">
+            <label class="form-label">Your Name *</label>
+            <input type="text" class="form-control" id="customerName" placeholder="Enter your full name" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="0300-1234567" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+            <small class="text-muted">Order confirmation will be sent here</small>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Delivery Address *</label>
+            <textarea class="form-control" id="deliveryAddress" rows="2" placeholder="House no, Street, Area, City" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Select Item *</label>
+            <select class="form-select" id="pizzaType" required>
+                <option value="" disabled selected>Choose your favorite item</option>
+                <option value="BBQ Chicken Pizza">BBQ Chicken Pizza - Rs850</option>
+                <option value="Margherita Classic">Margherita Classic - Rs850</option>
+                <option value="Pepperoni Supreme">Pepperoni Supreme - Rs950</option>
+                <option value="Truffle Mushroom">Truffle Mushroom - Rs1200</option>
+                <option value="Veggie Pizza Sandwich">Veggie Pizza Sandwich - Rs400</option>
+                <option value="Beef Pizza Sandwich">Beef Pizza Sandwich - Rs550</option>
+                <option value="Classic Garlic Bread">Classic Garlic Bread - Rs350</option>
+                <option value="Cheese Garlic Bread">Cheese Garlic Bread - Rs450</option>
+                <option value="Chicken Alfredo Pasta">Chicken Alfredo Pasta - Rs550</option>
+                <option value="Chocolate Lava Cake">Chocolate Lava Cake - Rs400</option>
+                <option value="New York Cheesecake">New York Cheesecake - Rs350</option>
+                <option value="Chocolate Brownie">Chocolate Brownie - Rs300</option>
+                <option value="Ice Cream Sundae">Ice Cream Sundae - Rs250</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Select Size</label><br>
+            <button type="button" class="btn btn-outline-secondary btn-size active" data-size-price="50">Medium (+Rs50)</button>
+            <button type="button" class="btn btn-outline-secondary btn-size" data-size-price="70">Medium+ (+Rs70)</button>
+            <button type="button" class="btn btn-outline-secondary btn-size" data-size-price="200">Ex-Large (+Rs200)</button>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Extra Toppings (Rs200 each)</label><br>
+            <div class="mt-2">
+                <input type="checkbox" class="topping" id="cheese" value="Extra Cheese">
+                <label for="cheese">Extra Cheese</label>
+                
+                <input type="checkbox" class="topping" id="mushrooms" value="Mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+                
+                <input type="checkbox" class="topping" id="olives" value="Olives">
+                <label for="olives">Olives</label>
+                
+                <input type="checkbox" class="topping" id="bacon" value="Bacon">
+                <label for="bacon">Bacon</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Quantity</label>
+            <input type="number" class="form-control w-25" id="quantity" value="1" min="1">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Special Instructions</label>
+            <textarea class="form-control" id="instructions" rows="2" placeholder="Any special requests?"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-order w-100">
+            <i class="fab fa-whatsapp"></i> Send Order via WhatsApp
+        </button>
+        
+        <button type="button" class="btn btn-email w-100" id="sendEmailBtn">
+            <i class="fas fa-envelope"></i> Send Order via Email
+        </button>
+        
+        <div class="mt-3 text-center">
+            <small class="text-muted">
+                <i class="fas fa-info-circle"></i> You'll receive confirmation on both WhatsApp & Email
+            </small>
+        </div>
+        
+    </form>
+</div>
+
+<!-- Summary -->
+<div class="col-lg-5">
+    <div class="order-summary">
+        <h3>Order Summary</h3>
+        <div class="order-item"><span>Item:</span><span id="summaryItem">-</span></div>
+        <div class="order-item"><span>Size:</span><span id="summarySize">Medium</span></div>
+        <div class="order-item"><span>Toppings:</span><span id="summaryToppings">None</span></div>
+        <div class="order-item"><span>Quantity:</span><span id="summaryQty">1</span></div>
+        <div class="order-item"><span>Base Price:</span><span>Rs <span id="summaryBase">0</span></span></div>
+        <div class="order-item"><span>Subtotal:</span><span>Rs <span id="summarySubtotal">0</span></span></div>
+        <div class="order-item"><span>Tax (16%):</span><span>Rs <span id="summaryTax">0</span></span></div>
+        <div class="order-item"><span>Delivery:</span><span>Rs <span id="summaryDelivery">200</span></span></div>
+        <hr>
+        <div class="order-item fw-bold"><span>Total:</span><span>Rs <span id="summaryTotal">0</span></span></div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const pizzaPrices = {
+        "BBQ Chicken Pizza":850,"Margherita Classic":850,"Pepperoni Supreme":950,"Truffle Mushroom":1200,
+        "Veggie Pizza Sandwich":400,"Beef Pizza Sandwich":550,"Classic Garlic Bread":350,"Cheese Garlic Bread":450,
+        "Chicken Alfredo Pasta":550,"Chocolate Lava Cake":400,"New York Cheesecake":350,"Chocolate Brownie":300,"Ice Cream Sundae":250
+    };
+
+    const pizzaSelect = document.getElementById('pizzaType');
+    const sizeBtns = document.querySelectorAll('.btn-size');
+    const toppings = document.querySelectorAll('.topping');
+    const qtyInput = document.getElementById('quantity');
+
+    const summaryItem = document.getElementById('summaryItem');
+    const summarySize = document.getElementById('summarySize');
+    const summaryToppings = document.getElementById('summaryToppings');
+    const summaryQty = document.getElementById('summaryQty');
+    const summaryBase = document.getElementById('summaryBase');
+    const summarySubtotal = document.getElementById('summarySubtotal');
+    const summaryTax = document.getElementById('summaryTax');
+    const summaryDelivery = document.getElementById('summaryDelivery');
+    const summaryTotal = document.getElementById('summaryTotal');
+
+    const successAlert = document.getElementById('successAlert');
+    const infoAlert = document.getElementById('infoAlert');
+    const infoMessage = document.getElementById('infoMessage');
+
+    let currentPrice=0, sizePrice=0;
+
+    function showAlert(alertElement, show = true) {
+        if(show) {
+            alertElement.style.display = 'block';
+            setTimeout(() => {
+                alertElement.style.display = 'none';
+            }, 5000);
+        } else {
+            alertElement.style.display = 'none';
+        }
+    }
+
+    function showInfo(message) {
+        infoMessage.textContent = message;
+        showAlert(infoAlert, true);
+    }
+
+    function updateSummary() {
+        const item = pizzaSelect.value;
+        const qty = parseInt(qtyInput.value)||1;
+        let selectedToppings = [...toppings].filter(t=>t.checked).map(t=>t.value);
+        let toppingsPrice = selectedToppings.length*200;
+
+        currentPrice = pizzaPrices[item]||0;
+        let subtotal = (currentPrice + sizePrice + toppingsPrice)*qty;
+        let tax = subtotal*0.16;
+        let total = subtotal + tax + 200;
+
+        summaryItem.textContent = item || "-";
+        summarySize.textContent = sizeBtns ? document.querySelector('.btn-size.active').textContent.replace(/\(\+Rs\d+\)/,'').trim() : "Medium";
+        summaryToppings.textContent = selectedToppings.length ? selectedToppings.join(', ') : "None";
+        summaryQty.textContent = qty;
+        summaryBase.textContent = currentPrice;
+        summarySubtotal.textContent = Math.round(subtotal);
+        summaryTax.textContent = Math.round(tax);
+        summaryTotal.textContent = Math.round(total);
+    }
+
+    // Event Listeners
+    pizzaSelect.addEventListener('change', updateSummary);
+    qtyInput.addEventListener('input', updateSummary);
+    toppings.forEach(t=>t.addEventListener('change', updateSummary));
+    sizeBtns.forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+            sizeBtns.forEach(b=>b.classList.remove('active'));
+            btn.classList.add('active');
+            sizePrice=parseInt(btn.getAttribute('data-size-price'))||0;
+            updateSummary();
+        });
+    });
+
+    // Function to create order message
+    function createOrderMessage() {
+        const name = document.getElementById('customerName').value;
+        const phone = document.getElementById('phoneNumber').value;
+        const email = document.getElementById('email').value;
+        const address = document.getElementById('deliveryAddress').value;
+        const item = pizzaSelect.value;
+        const qty = qtyInput.value;
+        let selectedToppings = [...toppings].filter(t=>t.checked).map(t=>t.value);
+        
+        // For WhatsApp (with emojis)
+        const whatsappMsg = `🍕 *Shale Pizza Order* 🍕
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Address: ${address}
+Item: ${item}
+Size: ${summarySize.textContent}
+Toppings: ${selectedToppings.join(', ') || "None"}
+Quantity: ${qty}
+Subtotal: Rs ${summarySubtotal.textContent}
+Tax: Rs ${summaryTax.textContent}
+Delivery: Rs ${summaryDelivery.textContent}
+Total: Rs ${summaryTotal.textContent}
+Instructions: ${document.getElementById('instructions').value || 'None'}`;
+
+        // For Email (without emojis, more formal)
+        const emailMsg = `Shale Pizza Order Confirmation
+
+Order Details:
+---------------
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Address: ${address}
+
+Order Summary:
+--------------
+Item: ${item}
+Size: ${summarySize.textContent}
+Toppings: ${selectedToppings.join(', ') || "None"}
+Quantity: ${qty}
+
+Payment Details:
+---------------
+Subtotal: Rs ${summarySubtotal.textContent}
+Tax (16%): Rs ${summaryTax.textContent}
+Delivery: Rs ${summaryDelivery.textContent}
+Total: Rs ${summaryTotal.textContent}
+
+Special Instructions: ${document.getElementById('instructions').value || 'None'}
+
+Thank you for ordering from Shale Pizza!
+Delivery Time: 30-40 minutes
+Contact: 0300-2026421`;
+
+        return { whatsappMsg, emailMsg };
+    }
+
+    // Send WhatsApp function
+    function sendWhatsApp() {
+        const { whatsappMsg } = createOrderMessage();
+        window.open(`https://wa.me/923002026421?text=${encodeURIComponent(whatsappMsg)}`, '_blank');
+        showInfo('WhatsApp message opened in new tab');
+    }
+
+    // Send Email function
+    function sendEmail() {
+        const email = document.getElementById('email').value;
+        if(!email) {
+            showInfo('Please enter your email address');
+            document.getElementById('email').focus();
+            return;
+        }
+
+        const { emailMsg } = createOrderMessage();
+        const subject = "Shale Pizza Order Confirmation";
+        
+        // mailto link - opens user's default email client
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailMsg)}`;
+        
+        // Try to open email client
+        const emailWindow = window.open(mailtoLink, '_blank');
+        
+        if(!emailWindow) {
+            // If popup blocked, show instructions
+            showInfo('Popup blocked! Please copy the order details and email manually');
+            
+            // Copy to clipboard as fallback
+            navigator.clipboard.writeText(emailMsg).then(() => {
+                showInfo('Order details copied to clipboard! Paste in your email');
+            });
+        } else {
+            showInfo('Email client opened with order details');
+        }
+    }
+
+    // Main form submission (WhatsApp + Email)
+    document.getElementById('orderForm').addEventListener('submit', e=>{
+        e.preventDefault();
+        
+        // Basic validation
+        const name = document.getElementById('customerName').value;
+        const phone = document.getElementById('phoneNumber').value;
+        const email = document.getElementById('email').value;
+        const address = document.getElementById('deliveryAddress').value;
+        const item = pizzaSelect.value;
+        
+        if(!name || !phone || !email || !address || !item) {
+            showInfo('Please fill all required fields');
+            return;
+        }
+        
+        // Send to WhatsApp
+        sendWhatsApp();
+        
+        // Wait 1 second then send email
+        setTimeout(() => {
+            sendEmail();
+        }, 1000);
+        
+        // Show success message
+        showAlert(successAlert, true);
+    });
+
+    // Separate Email button
+    document.getElementById('sendEmailBtn').addEventListener('click', () => {
+        sendEmail();
+    });
+
+    // Initialize
+    updateSummary();
+});
+</script>
+
+<!--Footer-->
+ <footer class="footer-main">
+        <div class="container py-4">
+            <div class="row g-4">
+                
+                <!-- Address with Rotating Logo -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="address-box">
+                        <div class="add-icon">
+                            <!-- Logo Image - Hover to see 360° rotation -->
+                            <img src="img-pic/footer-logo-2.jpg" alt="Pizza Logo">
+                        </div>
+                        <div class="add-content">
+                            <h5>Address</h5>
+                            <p>Shale Pizza<br>Plot No. 45, Street 8<br>Food Avenue, Phase II<br>Karachi, Pakistan <br>
+                            Postal Code: <br>
+                          72500</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-info">
+                        <h5>Contact Information</h5>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope"></i> 
+                            <a href="mailto:orders@shalepizzaasss.com">orders@shalepizzaasss.com</a>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone"></i> +92 300 1234567
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone"></i> +92 300 7654321
+                        </p>
+                        
+                        <div class="opening-hours mt-3">
+                            <h6><i class="fa fa-clock-o"></i> Opening Hours</h6>
+                            <p class="mb-1">Mon-Thu: 11:00 AM - 11:00 PM</p>
+                            <p>Fri-Sun: 11:00 AM - 1:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Social Icons with 360° Rotation -->
+            <div class="text-center my-4">
+                <a class="social-btn facebook" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook-f"></i></a>
+                <a class="social-btn twitter" href="https://x.com/" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a class="social-btn instagram" href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a class="social-btn youtube" href="https://www.youtube.com/" title="YouTube"><i class="fa fa-youtube"></i></a>
+                <a class="social-btn whatsapp" href="https://www.linked.com/" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>
+</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright text-center p-3 mt-3">
+                &copy; 1960 Shale Pizza. All Rights Reserved. | 
+                <a href="privacypolicyandterms.html#privacyTab">Privacy Policy</a> | 
+                <a href="privacypolicyandterms.html#termsTab">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- News Strip with Rotating NEWS Label -->
+    <div class="News-footer">
+        <div class="news-label">
+            <span><i class="fa fa-bullhorn"></i> NEWS</span>
+        </div>
+        <div class="news-content">
+            <marquee direction="left">
+                <a class="news-link" href="#">• Shale Pizza Your 1st Choice •</a>
+                <span>• Serving happiness since 1960 •</span>
+                <a class="news-link" href="#">• Flat 20% OFF on All Large Pizzas •</a>
+                <span>• Extra Cheese Loaded Pizzas Available •</span>
+                <a class="news-link" href="#">• Weekend Special Deals •</a>
+                <span>• Free Delivery on Orders Above Rs. 1500 •</span>
+            </marquee>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+</html>

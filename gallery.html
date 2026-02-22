@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaasss - Gallery</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.bunny.net/css?family=abel:400" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="img-pic/3rd.logo.pic.png" class="img-fluid" alt="logo" style="width: 100px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+         <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="menu.html">Main Menu</a></li> <hr>
+                            <li><a class="dropdown-item" href="menu.html#pizza">Pizza</a></li>
+                            <li><a class="dropdown-item" href="menu.html#pizza-sandwiches">Pizza Sandwiches</a></li>
+                            <li><a class="dropdown-item" href="menu.html#garlic-bread">Garlic Bread</a></li>
+                            <li><a class="dropdown-item" href="menu.html#pasta">Pasta</a></li>
+                            <li><a class="dropdown-item" href="menu.html#desserts">Desserts</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="menu.html#beverages">Beverages</a></li>
+                        </ul>
+                    </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="img-pic/shale-pizza-menu.pdf">Menu Download</a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Locations
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="locations.html#main-branch">Restaurant Location</a></li>
+            <li><a class="dropdown-item" href="locations.html#all-branches">Locations</a></li>
+            <li><a class="dropdown-item" href="about.html#faq">FAQ</a></li>
+          </ul>
+        </li>
+ <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Exclusive offers
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./menu.html#bestdeal">Best Deal</a></li>
+            <li><a class="dropdown-item" href="./img-pic/Weekend special.png" target="_blank">Weekend Special</a></li>
+            <li><a class="dropdown-item" href="./img-pic/Combo deal-1.png" target="_blank">Combo Offer Deal.1</a></li>
+            <li><a class="dropdown-item" href="./img-pic/Combo deal-2.png" target="_blank">Combo Offer Deal.2</a></li>
+           
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+  <a href="orderform.html" class="custom-btn">Order Now</a>
+</li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Gallery Header -->
+    <div class="gallery-header">
+        <div class="container">
+            <h1><img src="" alt=""> Our Gallery</h1>
+            <p class="subtitle">A Visual Feast of Culinary Excellence</p>
+            <div class="gallery-stats">
+                <div class="stat">
+                    <i class="fas fa-star"></i>
+                    <span>4.8/5 Rating</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-utensils"></i>
+                    <span>50+ Dishes</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-heart"></i>
+                    <span>1000+ Happy Customers</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Cards -->
+    <div class="gallery-container">
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-pizza-1.jpg');">
+                    <span class="card-badge"><i class="fas fa-fire"></i> Hot</span>
+                </div>
+                <div class="card-content">
+                    <h3>Chicken Pizza</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 25 min</div>
+                        <div><i class="fas fa-star"></i> 4.8 (234)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 850</div>
+                    </div>
+                    <p class="card-desc">Juicy with creamy mashed potatoes and seasonal vegetables.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-pizza-2.jpg');">
+                    <span class="card-badge veg"><i class="fas fa-leaf"></i> Veg</span>
+                </div>
+                <div class="card-content">
+                    <h3>Pizza with cheese</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 15 min</div>
+                        <div><i class="fas fa-star"></i> 4.5 (189)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 450</div>
+                    </div>
+                    <p class="card-desc">spicy chili sauce with bell peppers and onions.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-sandwiches-3.jpg');">
+                    <span class="card-badge"><i class="fas fa-pepper-hot"></i> Spicy</span>
+                </div>
+                <div class="card-content">
+                    <h3>Pizza Sandwich</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 20 min</div>
+                        <div><i class="fas fa-star"></i> 4.7 (312)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 650</div>
+                    </div>
+                    <p class="card-desc">Crispy chicken sauce with blue cheese dip.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-sandwiches-4-.jpg');">
+                    <span class="card-badge premium"><i class="fas fa-crown"></i> Premium</span>
+                </div>
+                <div class="card-content">
+                    <h3>Spicy Sandwitch with double cheese</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 18 min</div>
+                        <div><i class="fas fa-star"></i> 4.9 (267)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 1200</div>
+                    </div>
+                    <p class="card-desc">Fresh sautéed in garlic butter sauce with herbs and lemon.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-garlicbread-5-.jpg');">
+                    <span class="card-badge"><i class="fas fa-award"></i> Bestseller</span>
+                </div>
+                <div class="card-content">
+                    <h3>Premium Garlic Bread</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 12 min</div>
+                        <div><i class="fas fa-star"></i> 4.6 (421)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 550</div>
+                    </div>
+                    <p class="card-desc">Double patty Sandwich with special sauce, cheese, and crispy fries.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-garlicbread-6-.jpg');">
+                    <span class="card-badge new"><i class="fas fa-rocket"></i> New</span>
+                </div>
+                <div class="card-content">
+                    <h3>Pepperoni Supreme Garlic Brad</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 25 min</div>
+                        <div><i class="fas fa-star"></i> 4.9 (189)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 950</div>
+                    </div>
+                    <p class="card-desc">Double pepperoni with extra cheese and special tomato sauce.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Cards -->
+    <div class="gallery-container">
+        <div class="cards-grid">
+            <!-- Card 7 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-pasta-7.jpg');">
+                    <span class="card-badge"><i class="fas fa-fire"></i> Hot</span>
+                </div>
+                <div class="card-content">
+                    <h3>Pasta with cheese</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 25 min</div>
+                        <div><i class="fas fa-star"></i> 4.8 (234)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 850</div>
+                    </div>
+                    <p class="card-desc">Juicy with creamy mashed potatoes and seasonal vegetables.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-pasta-8.jpg');">
+                    <span class="card-badge veg"><i class="fas fa-leaf"></i> Veg</span>
+                </div>
+                <div class="card-content">
+                    <h3>Chicken Pasta</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 15 min</div>
+                        <div><i class="fas fa-star"></i> 4.5 (189)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 450</div>
+                    </div>
+                    <p class="card-desc">spicy chili sauce with bell peppers and onions.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-desert-9.jpg');">
+                    <span class="card-badge"><i class="fas fa-pepper-hot"></i> Yummy</span>
+                </div>
+                <div class="card-content">
+                    <h3>Best Desert</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 20 min</div>
+                        <div><i class="fas fa-star"></i> 4.7 (312)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 650</div>
+                    </div>
+                    <p class="card-desc">With extra cream.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-desert-10.jpg');">
+                    <span class="card-badge premium"><i class="fas fa-crown"></i> Premium</span>
+                </div>
+                <div class="card-content">
+                    <h3>Special creamy cake</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 18 min</div>
+                        <div><i class="fas fa-star"></i> 4.9 (267)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 1200</div>
+                    </div>
+                    <p class="card-desc">Fresh butter with cherry.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-beverage-11.jpg');">
+                    <span class="card-badge"><i class="fas fa-award"></i> Bestseller</span>
+                </div>
+                <div class="card-content">
+                    <h3>Regular </h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 12 min</div>
+                        <div><i class="fas fa-star"></i> 4.6 (421)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 550</div>
+                    </div>
+                    <p class="card-desc">Fresh juice with vitamins.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="food-card">
+                <div class="card-image" style="background-image:url('img-pic/gal-beverage-12.jpg');">
+                    <span class="card-badge new"><i class="fas fa-rocket"></i> New</span>
+                </div>
+                <div class="card-content">
+                    <h3>Supreme Pinaple juice</h3>
+                    <div class="card-info">
+                        <div><i class="fas fa-clock"></i> 25 min</div>
+                        <div><i class="fas fa-star"></i> 4.9 (189)</div>
+                        <div><i class="fas fa-rupee-sign"></i> 950</div>
+                    </div>
+                    <p class="card-desc">Fresh pinaple with extra flavour.</p>
+                    <div class="card-actions">
+                        <button class="order-btn" onclick="window.location.href='orderform.html#orderform'"><i class="fas fa-shopping-cart"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+ <footer class="footer-main">
+        <div class="container py-4">
+            <div class="row g-4">
+                
+                <!-- Address with Rotating Logo -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="address-box">
+                        <div class="add-icon">
+                            <!-- Logo Image - Hover to see 360° rotation -->
+                            <img src="img-pic/footer-logo-2.jpg" alt="Pizza Logo">
+                        </div>
+                        <div class="add-content">
+                            <h5>Address</h5>
+                            <p>Shale Pizza<br>Plot No. 45, Street 8<br>Food Avenue, Phase II<br>Karachi, Pakistan <br>
+                            Postal Code: <br>
+                          72500</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="contact-info">
+                        <h5>Contact Information</h5>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope"></i> 
+                            <a href="mailto:orders@shalepizzaasss.com">orders@shalepizzaasss.com</a>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone"></i> +92 300 1234567
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone"></i> +92 300 7654321
+                        </p>
+                        
+                        <div class="opening-hours mt-3">
+                            <h6><i class="fa fa-clock-o"></i> Opening Hours</h6>
+                            <p class="mb-1">Mon-Thu: 11:00 AM - 11:00 PM</p>
+                            <p>Fri-Sun: 11:00 AM - 1:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Social Icons with 360° Rotation -->
+            <div class="text-center my-4">
+                <a class="social-btn facebook" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook-f"></i></a>
+                <a class="social-btn twitter" href="https://x.com/" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a class="social-btn instagram" href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a class="social-btn youtube" href="https://www.youtube.com/" title="YouTube"><i class="fa fa-youtube"></i></a>
+                <a class="social-btn whatsapp" href="https://www.linked.com/" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>
+</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright text-center p-3 mt-3">
+                &copy; 1960 Shale Pizza. All Rights Reserved. | 
+                <a href="privacypolicyandterms.html#privacyTab">Privacy Policy</a> | 
+                <a href="privacypolicyandterms.html#termsTab">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- News Strip with Rotating NEWS Label -->
+    <div class="News-footer">
+        <div class="news-label">
+            <span><i class="fa fa-bullhorn"></i> NEWS</span>
+        </div>
+        <div class="news-content">
+            <marquee direction="left">
+                <a class="news-link" href="#">• Shale Pizza Your 1st Choice •</a>
+                <span>• Serving happiness since 1960 •</span>
+                <a class="news-link" href="#">• Flat 20% OFF on All Large Pizzas •</a>
+                <span>• Extra Cheese Loaded Pizzas Available •</span>
+                <a class="news-link" href="#">• Weekend Special Deals •</a>
+                <span>• Free Delivery on Orders Above Rs. 1500 •</span>
+            </marquee>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
